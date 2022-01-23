@@ -1,9 +1,168 @@
-html body {
+:root {
+    --dark: #2E3440;
+    --mid-dark: #3B4252;
+    --light-dark: #434C5E;
+    --lightest-dark: #4C566A;
+    --dark-light: #D8DEE9;
+    --mid-light: #E5E9F0;
+    --light: #ECEFF4;
+    --font-family: 'Helvetica', serif;
+}
+/* to use: var(--primary-color); */
+
+body {
+    font-family: var(--font-family);
     margin: 0px;
     padding: 0px;
+    background-color: var(--mid-dark);
 }
-
 
 .dropdown:hover {
     display: block;
 }
+
+#homeHeader {
+    background-color: var(--dark);
+}
+
+.navbarSection {
+    background-color: var(--dark);
+}
+
+.navbar-nav {
+    background-color: var(--dark);
+}
+
+#methodologyHeader {
+    margin: 100px 0;
+    font-size: 40pt;
+    text-align: center;
+}
+
+.methodology {
+    font-size: 24pt;
+    padding: 50px 0;
+}
+
+article {
+    display: inline;
+    font-size: 20pt;
+}
+
+.methodologyImages {
+    width: calc(100%/2.7);
+    margin-left: 10%;
+    border-radius: 40px;
+    box-shadow: 0 0 20px;
+}
+
+.rightText {
+    margin-left: 22%;
+}
+
+.leftText {
+    margin-left: 12%;
+    width: 25%;
+}
+
+#spiritualText {
+    color: var(--mid-light);
+}
+
+#physicalText {
+    color: var(--lightest-dark);
+}
+
+#intellectualText {
+    color: var(--darkest-light);
+}
+
+#emotionalText {
+    color: var(--mid-light);
+}
+
+#socialText {
+    color: var(--dark-light)
+}
+
+#spiritualImage {
+
+}
+
+#physicalImage {
+    margin-left: 20%;
+}
+
+#intellectualImage {
+}
+
+#emotionalImage {
+
+}
+
+#socialImage {
+
+}
+
+/* i think the angles have to be 45 deg because otherwise when scaling the browser, the different lines don't line up */
+/* actually just make them alternate direction each row */
+
+#spiritualSection {
+    background-image: linear-gradient(-35deg, var(--mid-light) 55%, var(--dark) 40%);
+}
+
+#physicalSection {
+    background-image: linear-gradient(-55deg, var(--lightest-dark) 61.25%, var(--dark-light) 61.25%);
+}
+
+#intellectualSection {
+    background-image: linear-gradient(50deg, var(--mid-light) 40.69%, var(--dark) 40.69%);
+
+}
+
+#emotionalSection {
+    background-image: linear-gradient(40deg, var(--mid-light) 59.57%, var(--dark) 40%);
+}
+
+#socialSection {
+    background-image: linear-gradient(-50deg, var(--mid-light) 55.15%, var(--dark) 40%);
+}
+/* navbar   */
+/* gradient blurrrrrr */
+
+/************* SPLASH PAGE ************/
+#splashBody {
+    color: var(--light);
+}
+
+#splashBody header {
+    padding: 20px;
+    width: 100%;
+}
+
+#splashBody footer {
+    text-align: center;
+}
+
+#splashBody main {
+    display: flex;
+    width: 100%;
+    gap: 100px;
+    padding: 20px;
+}
+
+#splashBody section img {
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid var(--lightest-dark);
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+#splashBody section {
+    width: 100%;
+}
+
+/**************************************/
