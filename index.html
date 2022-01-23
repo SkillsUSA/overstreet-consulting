@@ -14,7 +14,7 @@
             <h1>Overstreet Consulting</h1>
         </header>
         <main>
-            <section>
+            <section id="splashQuote">
                 <img src="placeholderMan.png" alt="Dr. Overstreet, PhD" />
                 <p>
                     Lorem ipsum dolor sit amet lorem ipsum dolor sit amet 
@@ -23,21 +23,29 @@
                     Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
                 </p>
             </section>
-            <section>
+            <section id="splashCoaching">
                 <h1>Coaching Where It's Needed Most</h1>
-                <ul>
-                    <li>Spiritual</li>
-                    <li>Intellectual</li>
-                    <li>Physical</li>
-                    <li>Emotional</li>
-                    <li>Social</li>
-                </ul>
+                <h2>The destination to your personal journey lies within</h2>
+                <div>
+                    <p>Learn how to nurture your well-being with</p>
+                    <ul>
+                        <li>Spiritual</li>
+                        <li>Intellectual</li> 
+                        <li>Physical Coaching</li>
+                        <li>Emotional Coaching</li>
+                        <li>Social Coaching</li>
+                    </ul>
+                </div>
+                <button id="splashButton" class="btn btn-primary">
+                    Learn More
+                    <i class="bi bi-arrow-up-right-square"></i>
+                </button>
             </section>
         </main>
         <footer id="pageFooter"></footer>
         <script>
             const footer = document.getElementById("pageFooter")
-            footer.innerHTML = `Overstreet Consulting | &copy; ${new Date().getFullYear()} | All rights reserved`
+            footer.innerHTML = `Overstreet Consulting | &copy; ${new Date().getFullYear()} | All Rights Reserved`
         </script>
     </body>
 </html>

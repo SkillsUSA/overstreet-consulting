@@ -6,7 +6,13 @@
     --dark-light: #D8DEE9;
     --mid-light: #E5E9F0;
     --light: #ECEFF4;
+    --light-green: #8FBCBB;
+    --light-blue: #88C0D0;
+    --light-purple: #81A1C1;
+    --dark-purple: #5E81AC;
     --font-family: 'Helvetica', serif;
+    --standard-gap: 15px;
+    --standard-border-radius: 10px;
 }
 /* to use: var(--primary-color); */
 
@@ -136,33 +142,98 @@ article {
 }
 
 #splashBody header {
-    padding: 20px;
+    padding: 20px 0px 10px 20px;
     width: 100%;
+    background: var(--light-dark);
 }
 
-#splashBody footer {
-    text-align: center;
+#splashBody header h1 {
+    font-size: 30px;
 }
 
 #splashBody main {
     display: flex;
     width: 100%;
-    gap: 100px;
-    padding: 20px;
+    padding: 40px 20px;
+}
+
+#splashButton {
+    font-size: 20px;
+    background: var(--light-dark);
+    border-color: var(--light-purple);
+}
+
+#splashButton:hover {
+    background: var(--dark);
 }
 
 #splashBody section img {
     height: 400px;
     display: block;
     margin: 0 auto;
-    border: 2px solid var(--lightest-dark);
+    border: 2px solid var(--dark);
     border-radius: 20px;
     padding: 20px;
     padding-bottom: 0px;
+    background: var(--light-dark);
 }
 
 #splashBody section {
+    padding: var(--standard-gap);
+    display: flex;
+    flex-direction: column;
+    gap: var(--standard-gap);
     width: 100%;
+    border-radius: var(--standard-border-radius);
+}
+
+#splashQuote {
+    text-align: justify;
+    font-size: 20px;
+}
+
+#splashCoaching {
+    justify-content: center;
+}
+
+#splashCoaching h2 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+#splashBody section h1 {
+    font-size: 60px;
+}
+
+#splashBody section ul {
+    font-size: 20px;
+    margin: 0px;
+    list-style-position: inside;
+    padding: 0px;
+}
+
+#splashCoaching div {
+    background: var(--dark-purple);
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: var(--standard-border-radius);
+    font-size: 20px;
+}
+
+#splashBody footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0px;
+    background: var(--light-dark);
+}
+
+#splashQuote p {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
 }
 
 /**************************************/
