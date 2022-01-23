@@ -6,11 +6,11 @@
     --dark-light: #D8DEE9;
     --mid-light: #E5E9F0;
     --light: #ECEFF4;
-    --font-family: 'Rubik', serif;
+    --font-family: 'Helvetica', serif;
 }
 /* to use: var(--primary-color); */
 
-html body {
+body {
     font-family: var(--font-family);
     margin: 0px;
     padding: 0px;
@@ -21,7 +21,7 @@ html body {
     display: block;
 }
 
-header {
+#homeHeader {
     background-color: var(--dark);
 }
 
@@ -33,7 +33,7 @@ header {
     background-color: var(--dark);
 }
 
-h1 {
+#methodologyHeader {
     margin: 100px 0;
     font-size: 40pt;
     text-align: center;
@@ -127,6 +127,42 @@ article {
 #socialSection {
     background-image: linear-gradient(-50deg, var(--mid-light) 55.15%, var(--dark) 40%);
 }
-/* font to Rubik */
 /* navbar   */
 /* gradient blurrrrrr */
+
+/************* SPLASH PAGE ************/
+#splashBody {
+    color: var(--light);
+}
+
+#splashBody header {
+    padding: 20px;
+    width: 100%;
+}
+
+#splashBody footer {
+    text-align: center;
+}
+
+#splashBody main {
+    display: flex;
+    width: 100%;
+    gap: 100px;
+    padding: 20px;
+}
+
+#splashBody section img {
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid var(--lightest-dark);
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+#splashBody section {
+    width: 100%;
+}
+
+/**************************************/
