@@ -33,10 +33,12 @@ body {
 
 .navbarSection {
     background-color: var(--dark);
+    
 }
 
 .navbar-nav {
     background-color: var(--dark);
+    width: 100%;
 }
 
 #methodologyHeader {
@@ -249,6 +251,55 @@ article {
 }
 
 /**************************************/
+
+/************ Spiritual Page ************/
+#spiritualHeader {
+    padding-top: 45px;
+    width: 100%;
+    height: 155px;;
+    text-align: center;
+    font-size: 50px;
+}
+
+.imageLayout {
+    width: calc(100%/2.7);
+    margin-left: 12%;
+    border-radius: var(--standard-border-radius);
+    box-shadow: 0 0 20px;
+    padding: 20px;
+}
+
+.spiritualPictureBorders {
+    border: 20px solid var(--dark-purple);
+    box-shadow: 0px 0px 20px 20px var(--dark);
+    width: calc(100%/1.9);
+}
+
+.rightestText {
+    padding-top: 120px; 
+    display: inline-block;
+    margin-left: 12%;
+    width: 25%;
+}
+
+.verticallyCenterLeftText {
+    padding-top: 120px;
+}
+
+.imageDescriptionFlex {
+    display: flex;
+    flex-direction: row;
+    padding-right: 12%;
+    width:100%;
+    height: fit-content;
+    gap: 50px;  
+}
+
+.differentBackground {
+    background: var(--lightest-dark);
+}
+
+
 
 /* About page styling */
 
