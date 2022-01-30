@@ -1,9 +1,239 @@
-html body {
+:root {
+    --dark: #2E3440;
+    --mid-dark: #3B4252;
+    --light-dark: #434C5E;
+    --lightest-dark: #4C566A;
+    --dark-light: #D8DEE9;
+    --mid-light: #E5E9F0;
+    --light: #ECEFF4;
+    --light-green: #8FBCBB;
+    --light-blue: #88C0D0;
+    --light-purple: #81A1C1;
+    --dark-purple: #5E81AC;
+    --font-family: 'Helvetica', serif;
+    --standard-gap: 15px;
+    --standard-border-radius: 10px;
+}
+/* to use: var(--primary-color); */
+
+body {
+    font-family: var(--font-family);
     margin: 0px;
     padding: 0px;
+    background-color: var(--mid-dark);
 }
-
 
 .dropdown:hover {
     display: block;
 }
+
+#homeHeader {
+    background-color: var(--dark);
+}
+
+.navbarSection {
+    background-color: var(--dark);
+}
+
+.navbar-nav {
+    background-color: var(--dark);
+}
+
+#methodologyHeader {
+    margin: 100px 0;
+    font-size: 40pt;
+    text-align: center;
+}
+
+.methodology {
+    font-size: 24pt;
+    padding: 50px 0;
+}
+
+article {
+    display: inline;
+    font-size: 20pt;
+}
+
+.methodologyImages {
+    width: calc(100%/2.7);
+    margin-left: 10%;
+    border-radius: 40px;
+    box-shadow: 0 0 20px;
+}
+
+.rightText {
+    margin-left: 22%;
+}
+
+.leftText {
+    margin-left: 12%;
+    width: 25%;
+}
+
+#spiritualText {
+    color: var(--mid-light);
+}
+
+#physicalText {
+    color: var(--lightest-dark);
+}
+
+#intellectualText {
+    color: var(--darkest-light);
+}
+
+#emotionalText {
+    color: var(--mid-light);
+}
+
+#socialText {
+    color: var(--dark-light)
+}
+
+#spiritualImage {
+
+}
+
+#physicalImage {
+    margin-left: 20%;
+}
+
+#intellectualImage {
+}
+
+#emotionalImage {
+
+}
+
+#socialImage {
+
+}
+
+/* i think the angles have to be 45 deg because otherwise when scaling the browser, the different lines don't line up */
+/* actually just make them alternate direction each row */
+
+#spiritualSection {
+    background-image: linear-gradient(-35deg, var(--mid-light) 55%, var(--dark) 40%);
+}
+
+#physicalSection {
+    background-image: linear-gradient(-55deg, var(--lightest-dark) 61.25%, var(--dark-light) 61.25%);
+}
+
+#intellectualSection {
+    background-image: linear-gradient(50deg, var(--mid-light) 40.69%, var(--dark) 40.69%);
+
+}
+
+#emotionalSection {
+    background-image: linear-gradient(40deg, var(--mid-light) 59.57%, var(--dark) 40%);
+}
+
+#socialSection {
+    background-image: linear-gradient(-50deg, var(--mid-light) 55.15%, var(--dark) 40%);
+}
+/* navbar   */
+/* gradient blurrrrrr */
+
+/************* SPLASH PAGE ************/
+#splashBody {
+    color: var(--light);
+}
+
+#splashBody header {
+    padding: 20px 0px 10px 20px;
+    width: 100%;
+    background: var(--light-dark);
+}
+
+#splashBody header h1 {
+    font-size: 30px;
+}
+
+#splashBody main {
+    display: flex;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+#splashButton {
+    font-size: 20px;
+    background: var(--light-dark);
+    border-color: var(--light-purple);
+}
+
+#splashButton:hover {
+    background: var(--dark);
+}
+
+#splashBody section img {
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid var(--dark);
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 0px;
+    background: var(--light-dark);
+}
+
+#splashBody section {
+    padding: var(--standard-gap);
+    display: flex;
+    flex-direction: column;
+    gap: var(--standard-gap);
+    width: 100%;
+    border-radius: var(--standard-border-radius);
+}
+
+#splashQuote {
+    text-align: justify;
+    font-size: 20px;
+}
+
+#splashCoaching {
+    justify-content: center;
+}
+
+#splashCoaching h2 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+#splashBody section h1 {
+    font-size: 60px;
+}
+
+#splashBody section ul {
+    font-size: 20px;
+    margin: 0px;
+    list-style-position: inside;
+    padding: 0px;
+}
+
+#splashCoaching div {
+    background: var(--dark-purple);
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: var(--standard-border-radius);
+    font-size: 20px;
+}
+
+#splashBody footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0px;
+    background: var(--light-dark);
+}
+
+#splashQuote p {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/**************************************/
