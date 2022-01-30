@@ -238,15 +238,24 @@ article {
 
 /**************************************/
 
+
+
+
 /* About page styling */
+
+body{
+    font-family: var(--font-family);
+}
 
 .aboutHeader {
     height: 70px;
-    background-color: aquamarine;
+    background-color: var(--dark);
 }
 
 .aboutMain {
     padding-top: 35px;
+    color: var(--light);
+    background-color: var(--light-dark);
 }
 
 .aboutMain h1 {
@@ -260,29 +269,47 @@ article {
     margin-bottom: 30px;
 }
 
-#whoAmIImage {
+#whoAmIImageDiv {
     width: 30%;
     height: 350px;
     background-color: red;
     margin-top: 50px;
     margin-left: 35%;
     margin-bottom: 30px;
+    padding: 20px 2%px;
+    border-radius: var(--standard-border-radius);
 }
 
 #whoAmIText {
     width: 50%;
     margin-left: 25%;
+    padding: 20px;
     font-size: 14pt;
     margin-bottom: 50px;
+    border: 2px solid var(--dark);
+    border-radius: var(--standard-border-radius);
+    background-color: var(--lightest-dark);
+
 }
 
-#coachingModelImage {
-    width: 30%;
+#coachingModelImageDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
     height: 350px;
     background-color: orange;
     margin-top: 40px;
     margin-bottom: 30px;
-    margin-left: 35%;
+    /* margin-left: 35%; */
+    border-radius: var(--standard-border-radius);
+}
+
+#secondImage {
+    height: 94%;
+    padding: 1% 2%;
+    background-color: green;
 }
 
 #coachingModelText {
@@ -290,6 +317,11 @@ article {
     font-size: 14pt;
     margin-left: 25%;
     margin-bottom: 50px;
+    padding: 20px;
+    background-color: var(--lightest-dark);
+    border: 2px solid var(--dark);
+    border-radius: var(--standard-border-radius);
+
 }
 
 #flexContainer {
@@ -301,14 +333,15 @@ article {
     height: 700px;
     margin-left: 10%;
     margin-bottom: 30px;
-    background-color: sienna;
-    border: 2px solid black;
-    border-radius: 35px;
+    background-color: var(--lightest-dark);
+    border: 2px solid var(--dark);
+    border-radius: var(--standard-border-radius);
+
 }
 
 #leftItem {
     width: 30%;
-    background-color: blueviolet;
+    background-color: var(--light-purple);
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -319,11 +352,11 @@ article {
 .subItem {
     font-size: 30pt;
     text-align: center;
-    color: black;
 }
 
 #rightItem {
     width: 70%;
+    background-color: var(--dark-purple);
 }
 
 #coachingList {
@@ -334,14 +367,18 @@ article {
 #wordsForBusinesses {
     width: 50%;
     margin-left: 25%;
-    background-color: aqua;
+    background-color: var(--dark-purple);
     margin-bottom: 30px;
+    border: 2px solid var(--dark);
+    border-radius: var(--standard-border-radius);
+
 
 }
 
 .WFBChild {
     text-align: center;
     font-weight: bold;
+
 }
 
 #WFBTitle {
@@ -354,7 +391,7 @@ article {
 
 .aboutFooter{
     height: 100px;
-    background-color: brown;
+    background-color: var(--dark);
 }
 
 #footerBootstrapDiv {
@@ -373,3 +410,105 @@ article {
 }
 
 /********************************/
+
+/* Color testing page */
+html, main {
+    background-color: white;
+}
+#span1 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color: greenyellow;
+    background-color: var(--dark);
+}
+
+#span2 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color: greenyellow;
+    background-color: var(--mid-dark);
+}
+
+#span3 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color: greenyellow;
+    background-color: var(--light-dark);
+}
+
+#span4 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color: greenyellow;
+    background-color: var(--lightest-dark);
+}
+
+#span5 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color: greenyellow;
+    background-color: var(--dark-light);
+}
+
+#span6 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color: greenyellow;
+    background-color: var(--mid-light);
+}
+
+#span7 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color: greenyellow;
+    background-color: var(--light);
+}
+
+#span8 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color: greenyellow;
+    background-color: var(--light-green);
+}
+
+#span9 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color: greenyellow;
+    background-color: var(--light-blue);
+}
+
+#span10 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color: greenyellow;
+    background-color: var(--light-purple);
+}
+
+#span11 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    color: greenyellow;
+    background-color: var(--dark-purple);
+}
+
+#spacerDiv {
+    height: 40px;
+    width: 100%;
+    background-color: blue;
+}
+
+#testImage {
+    width: 200px;
+}
