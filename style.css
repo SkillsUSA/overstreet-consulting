@@ -237,3 +237,139 @@ article {
 }
 
 /**************************************/
+
+/* About page styling */
+
+.aboutHeader {
+    height: 70px;
+    background-color: aquamarine;
+}
+
+.aboutMain {
+    padding-top: 35px;
+}
+
+.aboutMain h1 {
+    text-align: center;
+    font-size: 40pt;
+}
+
+.aboutMain h2 {
+    text-align: center;
+    font-size: 20pt;
+    margin-bottom: 30px;
+}
+
+#whoAmIImage {
+    width: 30%;
+    height: 350px;
+    background-color: red;
+    margin-top: 50px;
+    margin-left: 35%;
+    margin-bottom: 30px;
+}
+
+#whoAmIText {
+    width: 50%;
+    margin-left: 25%;
+    font-size: 14pt;
+    margin-bottom: 50px;
+}
+
+#coachingModelImage {
+    width: 30%;
+    height: 350px;
+    background-color: orange;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 35%;
+}
+
+#coachingModelText {
+    width: 50%;
+    font-size: 14pt;
+    margin-left: 25%;
+    margin-bottom: 50px;
+}
+
+#flexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 8%;
+    width: 80%;
+    height: 700px;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    background-color: sienna;
+    border: 2px solid black;
+    border-radius: 35px;
+}
+
+#leftItem {
+    width: 30%;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 7%;
+}
+
+.subItem {
+    font-size: 30pt;
+    text-align: center;
+    color: black;
+}
+
+#rightItem {
+    width: 70%;
+}
+
+#coachingList {
+    width: 90%;
+    font-size: 14pt;
+}
+
+#wordsForBusinesses {
+    width: 50%;
+    margin-left: 25%;
+    background-color: aqua;
+    margin-bottom: 30px;
+
+}
+
+.WFBChild {
+    text-align: center;
+    font-weight: bold;
+}
+
+#WFBTitle {
+    font-size: 14pt;
+}
+
+#WFBContent {
+    font-size: 16pt;
+}
+
+.aboutFooter{
+    height: 100px;
+    background-color: brown;
+}
+
+#footerBootstrapDiv {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 30%;
+    margin-left: 35%;
+    height: 40px;
+    padding-top: 30px;
+}
+
+.socialMedia {
+    color: black;
+}
+
+/********************************/
