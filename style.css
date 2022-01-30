@@ -1,4 +1,5 @@
 :root {
+    --very-dark: #2A2A2A;
     --dark: #2E3440;
     --mid-dark: #3B4252;
     --light-dark: #434C5E;
@@ -20,7 +21,6 @@ body {
     font-family: var(--font-family);
     margin: 0px;
     padding: 0px;
-    background-color: var(--mid-dark);
 }
 
 .dropdown:hover {
@@ -139,12 +139,18 @@ article {
 /************* SPLASH PAGE ************/
 #splashBody {
     color: var(--light);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--light-dark);
 }
 
 #splashBody header {
     padding: 20px 0px 10px 20px;
     width: 100%;
-    background: var(--light-dark);
+    background: var(--dark);
+    box-shadow: 0px 3px 10px 2px var(--dark);
 }
 
 #splashBody header h1 {
@@ -155,6 +161,9 @@ article {
     display: flex;
     width: 100%;
     padding: 40px 20px;
+    height: 100%;
+    align-items: stretch;
+    gap: 20px;
 }
 
 #splashButton {
@@ -179,12 +188,14 @@ article {
 }
 
 #splashBody section {
-    padding: var(--standard-gap);
+    padding: calc(2 * var(--standard-gap));
     display: flex;
     flex-direction: column;
     gap: var(--standard-gap);
     width: 100%;
     border-radius: var(--standard-border-radius);
+    box-shadow: 0px 5px 5px 2px var(--mid-dark);
+    background: var(--dark);
 }
 
 #splashQuote {
@@ -210,10 +221,11 @@ article {
     margin: 0px;
     list-style-position: inside;
     padding: 0px;
+    font-weight: bold;
 }
 
 #splashCoaching div {
-    background: var(--dark-purple);
+    background: var(--very-dark);
     margin-bottom: 10px;
     padding: 20px;
     border-radius: var(--standard-border-radius);
@@ -227,7 +239,7 @@ article {
     font-size: 20px;
     position: fixed;
     bottom: 0px;
-    background: var(--light-dark);
+    background: var(--dark);
 }
 
 #splashQuote p {
